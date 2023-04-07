@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHIT BY LIKELION</title>
+    <!-- 웹 브라우저 기본 스타일 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- js 연결 -->
+    <script async src="./main.js"></script>
+    <!-- google font 연결 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div id="container">
+                <div id="logo">
+                    <img src="https://techit.education/img/techit_logo.svg">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <span>테킷 스쿨</span>
+                        </li>
+                        <li>
+                            <span>스타트업 스테이션</span>
+                        </li>
+                        <li>
+                            <span>VOD 클래스</span>
+                        </li>
+                        <li>
+                            <span>기업교육</span>
+                        </li>
+                        <li>
+                            <span>이벤트</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="login">
+                    <span>로그인</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slide_area">
+        <!-- 수평 슬라이더 -->
+        <div id="slider">
+            <!-- 왼쪽 화살표 -->
+            <div class="material-icons arrow--left">
+                <
+            </div>
+            <!-- 오른쪽 화살표 -->
+            <div class="material-icons arrow--right">
+                >
+            </div>
+            <!-- 슬라이드 이미지들 -->
+            <div class="slide slide1">
+                <div class="slide__content inner">
+                    <div class="slide_explain">
+                        <h2>백엔드 스쿨 6기 : Python</h2>
+                        <h3>파이썬으로 배우는 백엔드 / 데브옵스 선택형 과정</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide__content inner">
+                    <div class="slide_explain white">
+                        <h2>DDC 2023 다시보기</h2>
+                        <h3>코엑스를 가득 채운 열정과 영감,</h3>
+                        <h3>VOD 영상을 통해 다시 한 번 경험하세요!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide__content inner">
+                    <div class="slide_explain">
+                        <h2>프론트엔드 스쿨 6기</h2>
+                        <h3>기초가 튼튼한 프론트엔드 개발자 양성 교육</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide__content inner">
+                    <div class="slide_explain">
+                        <h2>디자인 스쿨 1기</h2>
+                        <h3>[테킷X오픈패스] 프로젝트 실습 중심 UX/UI 교육</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide5">
+                <div class="slide__content inner">
+                    <div class="slide_explain">
+                        <h2>TECHIT 카카오톡 채널 추가 이벤트</h2>
+                        <h3>할인 쿠폰 전원 증정(* DDC : Dev. Day VOD 한정)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inner">
+        <section class="school_list">
+            <div class="title"> <!-- 밑에 edu에서 재사용될듯 -->
+                <div class="title_explain">
+                    <p class="orange">TECHIT KDT 스쿨 알아보기</p>
+                    <h2>전액 지원받고 기초부터 심화까지 한 큐에 성장</h2>
+                    <p class="gray">체계적인 커리큘럼을 가진 스쿨들을 만나보세요</p>
+                </div>
+                <a class="detail">자세히 보기 〉</a>
+            </div>
+            <div class="school_elements">
+                <div class="school_ele">
+                    <div class="school_pic s_pic1"></div>
+                    <div class="school_explain">
+                        <div class="state ing">모집중</div>
+                        <p class="school_sub1">디자인 스쿨</p>
+                        <p class="school_sub2">경쟁력 있는 커리어의 시작, 프로젝트 실습 중심 UX/UI 교육</p>
+                        <p class="date">23.04.10(토) ~ 23.04.27(목) 까지</p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic2"></div>
+                    <div class="school_explain">
+                        <div class="state ing">모집중</div>
+                        <p class="school_sub1">백엔드 스쿨:Python</p>
+                        <p class="school_sub2">파이썬으로 배우는 백엔드 / 데브옵스 선택형 과정</p>
+                        <p class="date">23.04.01(토) ~ 23.04.30(일) 까지</p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic3"></div>
+                    <div class="school_explain">
+                        <div class="state ing">모집중</div>
+                        <p class="school_sub1">프론트엔드 스쿨</p>
+                        <p class="school_sub2">기초가 튼튼한 프론트엔드 개발자 양성 교육</p>
+                        <p class="date">23.04.01(토) ~ 23.04.30(일) 까지</p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic4"></div>
+                    <div class="school_explain">
+                        <div class="state yet">사전알림신청</div>
+                        <p class="school_sub1">AI 스쿨</p>
+                        <p class="school_sub2">인공지능으로 문제를 해결하는 AI 전문가 교육</p>
+                        <p class="date"></p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic5"></div>
+                    <div class="school_explain">
+                        <div class="state yet">사전알림신청</div>
+                        <p class="school_sub1">블록체인 스쿨</p>
+                        <p class="school_sub2">새로운 기술을 갖춘 대체불가한 개발자 양성 교육</p>
+                        <p class="date"></p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic6"></div>
+                    <div class="school_explain">
+                        <div class="state end">모집마감</div>
+                        <p class="school_sub1">데이터 분석 스쿨</p>
+                        <p class="school_sub2">기본기가 탄탄한 데이터 분석가로의 도약</p>
+                        <p class="date">23.03.01(수) ~ 23.03.31(금) 까지</p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic7"></div>
+                    <div class="school_explain">
+                        <div class="state end">모집마감</div>
+                        <p class="school_sub1">앱 스쿨 : Android</p>
+                        <p class="school_sub2">기본기를 갖춘 준비된 Android 개발자로의 성장</p>
+                        <p class="date">23.03.31(금) ~ 23.04.05(수) 까지</p>
+                    </div>
+                </div>
+                <div class="school_ele">
+                    <div class="school_pic s_pic8"></div>
+                    <div class="school_explain">
+                        <div class="state end">모집마감</div>
+                        <p class="school_sub1">백엔드 스쿨 : Java</p>
+                        <p class="school_sub2">5달 간의 여정, 백엔드 개발자로 성장하는 지름길</p>
+                        <p class="date">23.03.01(수) ~ 23.03.27(월) 까지</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="alarm">
+            <h3>테킷 스쿨 사전알림</h3>
+            <p>
+                기다리는 스쿨이 있으신가요?
+                <br>
+                가장 먼저 모집 소식을 보내 드릴게요
+            </p>
+            <div>더 알아보기 ></div>
+        </section>
+        <section class="edu_list">
+            <div class="title"> <!-- 밑에 edu에서 재사용될듯 -->
+                <div class="title_explain">
+                    <p class="orange">모든 교육 경험</p>
+                    <h2>테킷이 두드리는 새로운 교육</h2>
+                    <p class="gray">성장을 위한 필요한 모든, 새로운 교육을 만나보세요</p>
+                </div>
+            </div>
+            <div class="edu_elements">
+                <div class="edu_ele">
+                    <div class="edu_pic e_pic1">
+                        <div class="edu_explain">
+                            <h4>스타트업 스테이션</h4>
+                            <p>
+                                IT 스타트업 창업 시작을 위한 
+                                <br>
+                                창업 온보딩 교육을 함께 도전해요.
+                            </p>
+                            <div>더 알아보기 ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu_ele">
+                    <div class="edu_pic e_pic2">
+                        <div class="edu_explain">
+                            <h4>커리어 로드맵</h4>
+                            <p>
+                                개발자 커리어, 어디서부터 어떻게
+                                <br>
+                                시작할지 모르겠을 때 활용해보세요.
+                            </p>
+                            <div>더 알아보기 ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu_ele">
+                    <div class="edu_pic e_pic3">
+                        <div class="edu_explain">
+                            <h4>VOD 클래스</h4>
+                            <p>
+                                테킷의 교육 노하우가
+                                <br>
+                                모두 담긴 클래스를 만나보세요.
+                            </p>
+                            <div>더 알아보기 ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu_ele">
+                    <div class="edu_pic e_pic4">
+                        <div class="edu_explain">
+                            <h4>테킷 KDT 스쿨</h4>
+                            <p>
+                                100% 전액지원 받고 테킷 KDT스쿨에서
+                                <br>
+                                커리어 목표를 달성해보세요.
+                            </p>
+                            <div>더 알아보기 ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="inner">
+            <div class="nav_list">
+                <div class="footer_img">
+                    <img class="footer_logo" src="https://techit.education/img/techit_by_likelion_logo.svg" alt="테킷로고">
+                </div>
+                <div class="footer_list">
+                    <div class="all_edu">
+                        <h3>모든 교육 경험</h3>
+                        <ul>
+                            <li>테킷 KDT 스쿨</li>
+                            <li>스타트업 스테이션</li>
+                            <li>VOD 클래스</li>
+                            <li>기업교육</li>
+                            <li>이벤트</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="company_info">
+                <ul>
+                    <li>
+                        <img src="https://techit.education/svg/icon_instagram.svg">
+                    </li>
+                    <li>
+                        <img src="https://techit.education/svg/icon_youtube.svg">
+                    </li>
+                    <li>
+                        <img src="https://techit.education/svg/icon_kakaoch.svg">
+                    </li>
+                    <li>
+                        <img src="https://techit.education/svg/icon_brunch.svg">
+                    </li>
+                    <li>
+                        <img src="https://techit.education/svg/icon_facebook.svg">
+                    </li>
+                </ul>
+                <div class="f_last1">이용약관 · 개인정보처리방침 · 환불규정</div>
+                <div class="f_last2">상호명: 멋쟁이사자처럼 | 대표: 이두희contact@likelion.net | 사업자 번호 : 264-88-01106 | 통신판매업 신고번호 : 2019-서울강남-00774</div>
+                <div>주소 : 서울 종로구 종로3길17, 광화문D타워 D1동 16층, 17층 Copyright © 2022 멋쟁이사자처럼 All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
