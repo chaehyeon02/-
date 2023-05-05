@@ -24,7 +24,7 @@ animal_key = list(animal.keys())
 my_bell = 3000
 my_pocket = []
 store = {'가습기': 1400, '강아지 인형': 2400, '강의실 책상': 2500, '몬스테라': 1700}
-store_key = ["가습기", "강아지 인형", "강의실 책상", "몬스테라"]
+store_key = list(store.keys())
 
 action_boolean = 1
 store_buy = 0
@@ -44,7 +44,7 @@ while action_boolean:
       time.sleep(0.5)
       print("현재 상점에는 이런 물건들이 있어구리\n")
       time.sleep(0.5)
-      store_list = list(store.items())
+
       num = 1
       for i in store:
         print(num, ". ", i, ": ", store[i],  "벨")
@@ -53,15 +53,18 @@ while action_boolean:
         
       store_buy = input("\n어떤 물건을 구입하겠어구리? (숫자를 입력)")
 
-      if store_list[int(store_buy) - 1][1] > my_bell:
+      if(store[store_key[int(store_buy) - 1]] > my_bell):
         print("벨이 모자라 구입할 수 없습니다!")
       else :
-        print(store_key[0], "을(를) 구입하셨습니다!")
+        print(store_key[int(store_buy) - 1], "을(를) 구입하셨습니다!")
         time.sleep(0.5)
-        my_bell -= store_list[int(store_buy) - 1][1]
+
+        my_bell -= store[store_key[int(store_buy) - 1]]
+        my_pocket.append(store_key[int(store_buy) - 1])
+        del store[store_key[int(store_buy) - 1]]
+
         print("남은 벨: ", str(my_bell))
-        my_pocket.append(store_key[0])
-        del store[store_list[int(store_buy) - 1][0]]
+        time.sleep(0.5)
       time.sleep(0.5)
       
     # # 2. 주민 찾아가기를 선택한 경우
